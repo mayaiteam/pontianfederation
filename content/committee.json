@@ -1,0 +1,53 @@
+{
+  "term": "2025–2027",
+  "members": [
+    {
+      "name": "Maria Anthony",
+      "role_en": "Co-President",
+      "role_el": "Συμπρόεδρος",
+      "city": "Sydney"
+    },
+    {
+      "name": "Peter Papoulidis",
+      "role_en": "Co-President",
+      "role_el": "Συμπρόεδρος",
+      "city": "Sydney"
+    },
+    {
+      "name": "Harry Tsairis",
+      "role_en": "Vice President",
+      "role_el": "Αντιπρόεδρος",
+      "city": "Melbourne"
+    },
+    {
+      "name": "Esta Paschalidis-Chilas",
+      "role_en": "Secretary",
+      "role_el": "Γραμματέας",
+      "city": ""
+    },
+    {
+      "name": "Myrto Makridis",
+      "role_en": "Assistant Secretary",
+      "role_el": "Αναπληρώτρια Γραμματέας",
+      "city": "Melbourne"
+    },
+    {
+      "name": "Angie Triandafilou",
+      "role_en": "Treasurer",
+      "role_el": "Ταμίας",
+      "city": "Canberra"
+    },
+    {
+      "name": "Harry Tsipidis",
+      "role_en": "Treasurer",
+      "role_el": "Ταμίας",
+      "city": "Sydney"
+    },
+    {
+      "name": "Voula Tsahouridis",
+      "role_en": "Event Manager",
+      "role_el": "Υπεύθυνη Εκδηλώσεων",
+      "city": "Melbourne"
+    }
+  ]
+}

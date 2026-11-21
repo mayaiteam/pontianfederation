@@ -1,0 +1,67 @@
+{
+  "associations": [
+    {
+      "name_en": "Panagia Soumela Sydney",
+      "name_el": "Παναγία Σουμελά Σύδνεϋ",
+      "city": "Sydney",
+      "state": "NSW",
+      "website": ""
+    },
+    {
+      "name_en": "Pontoxeniteas NSW",
+      "name_el": "Ποντοξενιτέας ΝΝΟ",
+      "city": "Sydney",
+      "state": "NSW",
+      "website": ""
+    },
+    {
+      "name_en": "Pontian Society of Wollongong “O Diogenes”",
+      "name_el": "Ποντιακός Σύλλογος Wollongong «Ο Διογένης»",
+      "city": "Wollongong",
+      "state": "NSW",
+      "website": ""
+    },
+    {
+      "name_en": "Pontiaki Estia – Central Pontian Association of Melbourne & Victoria",
+      "name_el": "Ποντιακή Εστία – Κεντρικός Ποντιακός Σύλλογος Μελβούρνης & Βικτώριας",
+      "city": "Melbourne",
+      "state": "VIC",
+      "website": ""
+    },
+    {
+      "name_en": "Akrites tou Pontou Melbourne",
+      "name_el": "Ακρίτες του Πόντου Μελβούρνης",
+      "city": "Melbourne",
+      "state": "VIC",
+      "website": ""
+    },
+    {
+      "name_en": "Pontian Brotherhood of South Australia",
+      "name_el": "Ποντιακή Αδελφότητα Νότιας Αυστραλίας",
+      "city": "Adelaide",
+      "state": "SA",
+      "website": ""
+    },
+    {
+      "name_en": "Pontian Brotherhood “St George” of Western Australia",
+      "name_el": "Ποντιακή Αδελφότητα «Άγιος Γεώργιος» Δυτικής Αυστραλίας",
+      "city": "Perth",
+      "state": "WA",
+      "website": ""
+    },
+    {
+      "name_en": "Canberra association (name to confirm)",
+      "name_el": "Σωματείο Καμπέρας (προς επιβεβαίωση)",
+      "city": "Canberra",
+      "state": "ACT",
+      "website": ""
+    },
+    {
+      "name_en": "Ninth association (name to confirm)",
+      "name_el": "Ένατο σωματείο (προς επιβεβαίωση)",
+      "city": "",
+      "state": "",
+      "website": ""
+    }
+  ]
+}

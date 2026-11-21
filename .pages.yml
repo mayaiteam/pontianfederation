@@ -1,0 +1,72 @@
+# Pages CMS configuration (https://pagescms.org): lets volunteers edit content in a simple web form.
+media:
+  input: src/assets/uploads
+  output: assets/uploads
+content:
+  - name: news
+    label: News
+    type: collection
+    path: content/news
+    format: json
+    filename: "{year}-{month}-{primary}.json"
+    view:
+      primary: title_en
+      fields: [title_en, date]
+      sort: [date]
+    fields:
+      - { name: date, label: Date, type: date, required: true }
+      - { name: title_en, label: Title (English), type: string, required: true }
+      - { name: title_el, label: Τίτλος (Ελληνικά), type: string, required: true }
+      - { name: body_en, label: Story (English), type: text, description: "Leave a blank line between paragraphs." }
+      - { name: body_el, label: Κείμενο (Ελληνικά), type: text, description: "Αφήστε κενή γραμμή ανάμεσα στις παραγράφους." }
+  - name: events
+    label: Events
+    type: collection
+    path: content/events
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title_en
+      fields: [title_en, when_en, order]
+      sort: [order]
+    fields:
+      - { name: order, label: Order on page (1 = first), type: number }
+      - { name: title_en, label: Event name (English), type: string, required: true }
+      - { name: title_el, label: Όνομα εκδήλωσης (Ελληνικά), type: string, required: true }
+      - { name: when_en, label: "When & where (English), e.g. 19 May · Sydney", type: string }
+      - { name: when_el, label: Πότε & πού (Ελληνικά), type: string }
+      - { name: description_en, label: Short description (English), type: text }
+      - { name: description_el, label: Σύντομη περιγραφή (Ελληνικά), type: text }
+      - { name: link, label: Tickets or details link (optional), type: string }
+  - name: associations
+    label: Member associations
+    type: file
+    path: content/associations.json
+    format: json
+    fields:
+      - name: associations
+        label: Associations
+        type: object
+        list: true
+        fields:
+          - { name: name_en, label: Name (English), type: string }
+          - { name: name_el, label: Όνομα (Ελληνικά), type: string }
+          - { name: city, label: City, type: string }
+          - { name: state, label: State, type: string }
+          - { name: website, label: Website or Facebook link (optional), type: string }
+  - name: committee
+    label: Executive committee
+    type: file
+    path: content/committee.json
+    format: json
+    fields:
+      - { name: term, label: "Term, e.g. 2025–2027", type: string }
+      - name: members
+        label: Members
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role_en, label: Role (English), type: string }
+          - { name: role_el, label: Ρόλος (Ελληνικά), type: string }
+          - { name: city, label: City, type: string }
