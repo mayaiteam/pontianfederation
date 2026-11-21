@@ -14,3 +14,6 @@ Bilingual (English / Greek) static site. No dependencies: `python3 build.py` wri
 - Build output directory: `dist`
 - Production branch: `main`
 - Custom domain: `pontos.org.au` (and `www.pontos.org.au`)
+
+### Cloudflare Workers (current setup)
+The project is deployed as a Cloudflare Worker with static assets. `wrangler.jsonc` runs `python3 build.py` and serves `dist/`. The deploy command in Cloudflare is the default `npx wrangler deploy`. `dist/` is also committed as a fallback.

@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers static-assets deploy for pontos.org.au
+  "name": "pontianfederation",
+  "compatibility_date": "2026-11-01",
+  "build": {
+    // Rebuilds dist/ from content/ on every deploy. Falls back to the committed dist/ if Python is missing.
+    "command": "python3 build.py || echo 'python3 unavailable, deploying committed dist/'"
+  },
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}

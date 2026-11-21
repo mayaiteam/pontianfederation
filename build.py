@@ -34,10 +34,10 @@ def page(fname, title_en, title_el, body):
 <meta name="title-en" content="{title_en} · {site_en}">
 <meta name="title-el" content="{title_el} · {site_el}">
 <meta name="description" content="The Federation of Pontian Associations of Australia, est. 1989, unites Pontian Greek associations across Australia.">
-<link rel="icon" href="assets/favicon.png">
+<link rel="icon" href="/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 <div class="top"><div class="wrap">
@@ -262,6 +262,11 @@ CONTACT = f'''
 </div></section>
 '''
 
+NOTFOUND = f'''
+<div class="pagehead"><div class="wrap"><h1>{t("Page not found", "Η σελίδα δεν βρέθηκε")}</h1>
+<p><a href="index.html">{t("Back to the home page", "Επιστροφή στην αρχική")}</a></p></div></div>
+'''
+
 PAGES = [
     ("index.html", "Home", "Αρχική", HOME),
     ("about.html", "About", "Ποιοι είμαστε", ABOUT),
@@ -269,6 +274,7 @@ PAGES = [
     ("events.html", "Events", "Εκδηλώσεις", EVENTS),
     ("news.html", "News", "Νέα", NEWS),
     ("contact.html", "Contact", "Επικοινωνία", CONTACT),
+    ("404.html", "Page not found", "Η σελίδα δεν βρέθηκε", NOTFOUND),
 ]
 
 if __name__ == "__main__":
